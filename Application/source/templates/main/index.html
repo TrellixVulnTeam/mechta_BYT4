@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>"Мечта"</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='fontawesome/css/all.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='MDB/css/mdb.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='contact.css') }}">
+</head>
+<body>
+	<!-- Код написал: @PaperDevil/@Paper_devil -->
+
+	<!-- Main navigation -->
+	<header>
+		<!--Navbar-->
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+			<div class="container">
+				<a class="navbar-brand" href="#">
+					<strong>Мечта/Dream</strong>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#placement">Расположение
+								<span class="sr-only">(current)</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact">Контакты
+								<span class="sr-only">(current)</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#partner">Партнёры
+								<span class="sr-only">(current)</span>
+							</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="#top">О Нас/About Us
+								<span class="sr-only">(current)</span>
+							</a>
+						</li>
+					</ul>
+					<form class="form-inline">
+						<div class="md-form my-0">
+							<input class="form-control mr-sm-2" type="text" placeholder="Поиск/Search" aria-label="Search">
+						</div>
+					</form>
+				</div>
+			</div>
+		</nav>
+		<!-- Full Page Intro -->
+		<div class="view" style="background-image: url('{{ url_for('static', filename='images/collage/photoBgOne.jpg') }}'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+			<!-- Mask & flexbox options-->
+			<div class="mask rgba-gradient align-items-center">
+				<!-- Content -->
+				<div id="main-info" class="container-fluid">
+					<!--Grid row-->
+					<div class="row">
+						<!--Grid column-->
+						<div class="col-md-6 col-xl-5 mt-xl-5 wow fadeInRight" data-wow-delay="0.3s" id="icon-hide">
+							<!-- <img src="https://mdbootstrap.com/img/Mockups/Transparent/Small/admin-new.png" alt="" class="img-fluid p-5"> -->
+
+							<ul class="pic-list">
+								<div id="pic-list-1">
+									<li><a href="#"><i class="fab fa-google"></i></a></li>
+									<li><a href="#"><i class="fab fa-yandex"></i></a></li>
+									<li><a href="#"><i class="fas fa-map-marker-alt"></i></a></li>
+								</div>
+								<div id="pic-list-2">
+									<li><a href="#"><i class="fab fa-vk"></i></a></li>
+									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+									<li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
+								</div>
+								<div id="pic-list-3">
+									<li><a href="#"><i class="fas fa-envelope"></i></a></li>
+									<li><a href="#"><i class="fas fa-phone"></i></a></li>
+									<li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+								</div>
+							</ul>
+						</div>
+						<!--Grid column-->
+						<!--Grid column-->
+						<div class="col p-5 white-text text-center text-md-left mt-xl-5 mb-5 wow fadeInLeft" data-wow-delay="0.3s" id="header-content">
+							<!-- img logo space -->
+							<img style="display: block; margin-left: auto; margin-right: auto; width: 400px; height: auto;" src="{{ url_for('static', filename='images/Logo.png') }}" alt="Логотип интернет версии Мечта">
+							<hr class="hr-light">
+							<h6 class="mb-2" id="title-text">
+								<p name='top'></p>
+								Магазин-Бар расположенный в центре города Казань, предоставляющий большой ассортимент как продуктового товара, так и различных напитков. У нас можно посидеть, выпить, отдохнуть в уютной обстановке. Мы принимаем заказы на Чак-чак разных видов: обычные, шоколадные, подарочные наборы. А так же у нас вы можете приоборести различные виды сувенирной продукции: кружки, тарелки, магниты, футболки.
+							</h6>
+						</div>
+						<!--Grid column-->
+					</div>
+					<!--Grid row-->
+				</div>
+				<!-- Content -->
+			</div>
+			<!-- Mask & flexbox options-->
+		</div>
+		<!-- Full Page Intro -->
+	</header>
+	<!-- /Main navigation -->
+	<!--Main Layout-->
+	<main>
+		<div class="container">
+			<!--Grid row-->
+			<div class="row py-5">
+				<!--Grid column-->
+				<a href="" name="placement"></a>
+				<div class="col-md-12 text-center">
+					<p class="h2">Где мы находимся?</p>
+				</div>
+				<div class="col-lg-6 col-md-12 text-center">
+					<a href="#"><i style="font-size: 30px;" class="fas fa-search-location"></i><p class="h3">г.Казань, ул.Астрономическая, дом 8/21</p></a>
+					<p style="font-size: 20px;">Магазин располагается на пересечении улиц Астрономическая и Островского, в одном из пролётов центральной городской улицы - Баумана.</p>
+				</div>
+				<div class="col-lg-6 col-md-12 col-sm-12 text-center">
+					<a class="dg-widget-link" href="http://2gis.ru/kazan/firm/2956016536755148/center/49.11607503890992,55.789109919919724/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Казани</a><div class="dg-widget-link"><a href="http://2gis.ru/kazan/center/49.116079,55.788957/zoom/16/routeTab/rsType/bus/to/49.116079,55.788957╎Клиника Тибетской медицины?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Клиника Тибетской медицины</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":"400 auto","height":600,"borderColor":"#a3a3a3","pos":{"lat":55.789109919919724,"lon":49.11607503890992,"zoom":16},"opt":{"city":"kazan"},"org":[{"id":"2956016536755148"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+				</div>
+				<div class="col-md-12 text-center m-3">
+					<p class="h2">Как с нами связаться?</p>
+				</div>
+				<div class="col-lg-6 col-md-12 text-center">
+					<p style="font-size: 20px;">Связаться с менеджерами или управляюшими заведения можно несколькими следующими образами:<br>
+						<ul style="font-size: 18px;" class="text-left">
+							<li><i class="fas fa-phone m-1"></i>Phone: <a class="text-info">+7 (900) 000 00 00</a></li>
+							<li><i class="fas fa-envelope m-1"></i>Email: <a class="text-info">email@domen.dom</a></li>
+							<li><i class="fab fa-telegram-plane m-1"></i>Telegram: <a class="text-info">@tmechanel</a></li>
+							<li><i class="fab fa-vk m-1"></i>VKontakte: <a class="text-info">vk.com/mechta</a></li>
+							<li><i class="fab fa-instagram m-1"></i>Instagram: <a class="text-info">@instmechta</a></li>
+						</ul>
+					Или же заполнив следующую форму:
+					</p>
+					<a href="" name="contact"></a>
+				</div>
+				<div class="col-lg-6 col-md-12 col-sm-12">
+					<div class="contact">
+						<form action="#">
+							<fieldset>					
+								<div class="row">
+									<section class="col col-4">
+										<label class="input">
+											<i class="fas fa-append fa-user"></i>
+											<input type="text" placeholder="Имя" required>
+										</label>
+									</section>
+									<section class="col col-8">
+										<label class="input">
+											<i class="fas fa-append fa-envelope"></i>
+											<input type="email" placeholder="E-mail" required>
+										</label>
+									</section>
+								</div>
+								<section>
+									<label class="input">
+										<i class="fas fa-append fa-tag"></i>
+										<input type="text" placeholder="Тема">
+									</label>
+								</section>               
+								<section>
+									<label class="textarea">
+										<i class="fas fa-append fa-comment"></i>
+										<textarea rows="4" placeholder="Сообщение" required></textarea>
+									</label>
+								</section>             
+								<button type="submit" class="button">Отправить</button>
+							</fieldset>						
+						</form>
+					</div>
+				</div>
+				<div class="col-md-12 text-center m-3">
+					<p class="h2">Блок под вопросом!?</p>
+				</div>
+				<div class="col-md-12 text-center">
+					<p style="font-size: 40px;"></p>
+				</div>
+				<a href="" name="partner"></a>
+				<!--Grid column-->
+			</div>
+			<!--Grid row-->
+		</div>
+	</main>
+	<!--/Main Layout-->
+
+	<!-- Импорт: Bootstrap, Bootstrap tooltip, JQuery, MDB -->
+	<script src="{{ url_for('static', filename='jquery.js') }}"></script>
+	<script src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='popper.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='MDB/js/mdb.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='my.js') }}"></script>
+</body>
+</html>
