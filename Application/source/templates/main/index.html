@@ -58,7 +58,7 @@
 			</div>
 		</nav>
 		<!-- Full Page Intro -->
-		<div class="view" style="background-image: url('static/images/collage/photoBgOne.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+		<div class="view" style="background-image: url('{{ url_for('static', filename='images/collage/photoBgOne.jpg') }}'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
 			<!-- Mask & flexbox options-->
 			<div class="mask rgba-gradient align-items-center">
 				<!-- Content -->
@@ -91,7 +91,7 @@
 						<!--Grid column-->
 						<div class="col p-5 white-text text-center text-md-left mt-xl-5 mb-5 wow fadeInLeft" data-wow-delay="0.3s" id="header-content">
 							<!-- img logo space -->
-							<img style="display: block; margin-left: auto; margin-right: auto; width: 400px; height: auto;" src="static/images/Logo.png" alt="Логотип интернет версии Мечта">
+							<img style="display: block; margin-left: auto; margin-right: auto; width: 400px; height: auto;" src="{{ url_for('static', filename='images/Logo.png')}}" alt="Логотип интернет версии Мечта">
 							<hr class="hr-light">
 							<h6 class="mb-2" id="title-text">
 								<p name='top'></p>
@@ -200,7 +200,7 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<!-- MDB core JavaScript -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.1/js/mdb.min.js"></script>
-	
+
 	<script src="{{ url_for('static', filename='my.js') }}"></script>
 </body>
 </html>
